@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mia Collins 💕</title>
+    <style>
+        img {
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-select: none;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .background-carousel {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .background-carousel img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            animation: carousel 9s infinite;
+        }
+
+        .background-carousel img:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .background-carousel img:nth-child(2) {
+            animation-delay: 3s;
+        }
+
+        .background-carousel img:nth-child(3) {
+            animation-delay: 6s;
+        }
+
+        @keyframes carousel {
+            0% { opacity: 0; }
+            20% { opacity: 1; }
+            40% { opacity: 1; }
+            60% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px 0;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: opacity 0.3s, transform 0.3s;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .link:hover {
+            opacity: 0.9;
+            transform: scale(1.09);
+        }
+
+        .instagram {
+            background: #e4405f;
+        }
+
+        .onlyfans {
+            background: #00aff0;
+        }
+
+        .fanvue {
+            background-color: rgb(255, 255, 255);
+            color: rgb(251, 54, 97);
+        }
+
+        .twitter {
+            background: rgb(51, 51, 51);
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-carousel">
+        <img src="header.png" alt="Background 1">
+        <img src="cover_booba.png" alt="Background 2">
+        <img src="nature.png" alt="Background 3">
+    </div>
+
+        <div class="container">
+            <img src="pfp.png" alt="Profile" class="profile-img">
+            <h3>🌟 Discover More of Me 🌟</h3>
+            <p>✨ Follow me on all my platforms for exclusive content and updates. Click the links below and join the fun!
+            </p><br>
+                <p>💕 Love, Mia Collins 💕</p>
+                <a href="https://www.fanvue.com/miacollins" class="link fanvue">
+                    <img src="fanvue.jpg" alt="Twitter" class="icon">
+                    Fanvue
+                </a>
+
+            <a href="https://x.com/__Mia_Collins__" class="link twitter">
+                <img src="x.png" alt="Twitter" class="icon">
+                Twitter
+            </a>
+            <a href="https://www.instagram.com/mia_collins_uwu/" class="link instagram">
+                <img src="instagram.png" alt="Instagram" class="icon">
+                Instagram
+            </a>
+
+
+        </div>
+    </div>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const images = document.querySelectorAll('img');
+      images.forEach(img => {
+        img.setAttribute('draggable', false);
+      });
+    });
+  document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('contextmenu', function(event) {
+      event.preventDefault();
+    });
+  });
+
+  </script>
+</body>
+
+</html>
